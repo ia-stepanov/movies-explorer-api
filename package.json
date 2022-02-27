@@ -1,0 +1,33 @@
+{
+  "name": "movies-explorer-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js",
+    "lint": "npx eslint ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ia-stepanov/movies-explorer-api.git"
+  },
+  "keywords": [
+    "yandex-praktikum"
+  ],
+  "author": "Igor Stepanov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ia-stepanov/movies-explorer-api/issues"
+  },
+  "homepage": "https://github.com/ia-stepanov/movies-explorer-api#readme",
+  "dependencies": {
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.25.4",
+    "express": "^4.17.3"
+  },
+  "devDependencies": {
+    "eslint": "^8.10.0",
+    "nodemon": "^2.0.15"
+  }
+}
