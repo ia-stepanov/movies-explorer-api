@@ -10,6 +10,21 @@ const validationUrl = (url) => {
   throw new BadRequest('Некорректный адрес URL');
 };
 
+const validationLogin = celebrate({
+  body: Joi.object().keys({
+    email: Joi.string().required().email(),
+    password: Joi.string().required(),
+  }),
+});
+
+const validationCreateUser = celebrate({
+  body: Joi.object().keys({
+    name: Joi.string().min(2).max(30),
+    email: Joi.string().required().email(),
+    password: Joi.string().required(),
+  }),
+});
+
 const validationGetUser = celebrate({
   params: Joi.object().keys({
     userId: Joi.string().alphanum().length(24).hex(),
@@ -46,6 +61,8 @@ const validationDeleteMovie = celebrate({
 });
 
 module.exports = {
+  validationLogin,
+  validationCreateUser,
   validationGetUser,
   validationUpdateUser,
   validationCreateMovie,
