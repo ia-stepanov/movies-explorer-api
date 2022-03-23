@@ -11,7 +11,7 @@
 
 - Роуты для фильмов:
   - GET /movies — возвращает все фильмы из базы;
-  - POST /movies — создаёт фильм с переданными в теле запроса country, director, duration, year, description, image, trailerLink, thumbnail, movieId, nameRU и nameEN;
+  - POST /movies — создаёт фильм с переданными в теле запроса country, director, duration, year, description, image, trailer, thumbnail, movieId, nameRU и nameEN;
   - DELETE /movies/:movieId — удаляет фильм по _id.
 
 ## Стек технологий:
